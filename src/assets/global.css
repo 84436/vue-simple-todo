@@ -1,0 +1,63 @@
+:root {
+    font-size: 10px;
+    background-color: #eee;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type="text"] {
+    border: none;
+    outline: none;
+}
+
+#app {
+    display: flex;
+    flex-flow: column;
+    row-gap: 16px;
+    width: clamp(360px, 90vw, 960px);
+    margin: 40px auto;
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    column-gap: 8px;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow:
+        0px 2.3px 2.3px rgba(0, 0, 0, 0.024),
+        0px 6.3px 6.3px rgba(0, 0, 0, 0.035),
+        0px 15.1px 15.1px rgba(0, 0, 0, 0.046),
+        0px 50px 50px rgba(0, 0, 0, 0.07)
+    ;
+}
+
+#todo-list {
+    display: flex;
+    flex-flow: column;
+    row-gap: 8px;
+}
+
+.todo-item {
+    display: flex;
+    flex-flow: row;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.todo-item-done .item-content {
+    color: #e0e0e0;
+    text-decoration: line-through;
+}
+
+#omnibox-container { flex-flow: row; }
+#omnibox { flex-grow: 1; }
+.item-content { flex-grow: 1; }
+
+input[type="button"] {
+    padding: 4px;
+}
