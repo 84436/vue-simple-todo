@@ -1,7 +1,9 @@
 # Simple Vue Todo App
 This is a really simple todo app written in Vue.
 
-Featuring:
+
+
+### Featuring
 
 -   [x] 100% "Vue Composition API"-free
 -   [x] 100% TypeScript-free
@@ -14,6 +16,15 @@ Featuring:
 -   [x] Bootstrapped with [Vite](https://vitejs.dev/) -- no seriously try it out, too damn fast; idk if it can be flexible with configs in the future tho
 -   [x] two nice keyboard shortcuts: Enter to add, Esc to clear
 -   [ ] suitable as a template to get started
+
+
+
+### Getting started
+
+```
+$ yarn
+$ yarn dev
+```
 
 
 
