@@ -1,6 +1,6 @@
 <template>
-    <Omnibox @todo-search="filterTodo" @todo-add="addTodo" @todo-clear-done="removeDoneTodo" />
-    <TodoList :todos="todos" @todo-update-2="updateTodo" @todo-remove-2="removeTodo" />
+    <omnibox @todo-search="filterTodo" @todo-add="addTodo" @todo-clear-done="removeDoneTodo" />
+    <todo-list :todos="todos" @todo-update-2="updateTodo" @todo-remove-2="removeTodo" />
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
     <div id="todo-list" class="card">
-        <TodoItem v-for="todo in todos"
+        <todo-item v-for="todo in todos"
             :id="todo.id" :content="todo.content" :done="todo.done"
             :key="todo.id" @todo-update="relayEmitUpdate" @todo-remove="relayEmitRemove" />
     </div>
