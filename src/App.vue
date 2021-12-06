@@ -1,12 +1,12 @@
 <template>
-    <Omnibox @todo-search="filterTodo" @todo-add="addTodo" @todo-clear-done="removeDoneTodo"/>
+    <Omnibox @todo-search="filterTodo" @todo-add="addTodo" @todo-clear-done="removeDoneTodo" />
     <TodoList :todos="todos" @todo-update-2="updateTodo" @todo-remove-2="removeTodo" />
 </template>
 
 <script>
 import Omnibox from "./components/Omnibox.vue"
 import TodoList from "./components/TodoList.vue"
-import { uniqueId, update, findIndex } from "lodash-es"
+import { uniqueId, findIndex } from "lodash-es"
 import "./assets/global.css"
 
 export default {
@@ -37,8 +37,9 @@ export default {
             this.searchQuery = query
         },
         addTodo(content) {
+            this.searchQuery = '' // Reset view
             let nextId = uniqueId()
-            this.originalTodos.push({
+            this.originalTodos.unshift({ // Push to beginning of array
                 id: nextId,
                 content: content,
                 done: false
