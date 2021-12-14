@@ -1,31 +1,43 @@
-# Simple Vue Todo App
-This is a really simple todo app written in Vue.
+# ![](./doc_assets/icon.png) Simple Vue Todo App
+
+Đây là một cái app todo kinh điển "dành cho người mới bắt đầu" được viết bằng Vue.
+
+![](./doc_assets/app.png)
 
 
 
-### Featuring
+## Điểm nổi bật
 
--   [x] 100% "Vue Composition API"-free
--   [x] 100% TypeScript-free
--   [x] 100% "clean code"-free
--   [x] at least 99% bugs, free
--   [x] some lodash bits sprinkled in
--   [x] at least a `document.querySelector()` lurking somewhere in the code if you look hard enough maybe
--   [x] 0% aesthetic -- "Segoe UI" wth
--   [x] global.css -- hey you know `<style>` is a thing in Vue SFC right
--   [x] Bootstrapped with [Vite](https://vitejs.dev/) -- no seriously try it out, too damn fast; idk if it can be flexible with configs in the future tho
--   [x] two nice keyboard shortcuts: Enter to add, Esc to clear
--   [ ] suitable as a template to get started
+*   Viết bằng Vue 3 (nhưng không dùng Composition API) và Vuex (quản lý state)
+*   Được bootstrap bằng [Vite](https://vitejs.dev/), một trình build + dev server nhanh gọn hơn (nhưng ít tính năng hơn :<) so với Vue CLI
 
 
 
-### Getting started
+### Điểm không nổi bật lắm
 
+*   Đảm bảo 0% Clean Code (cả project này được viết tay mà không có sự trợ giúp của `eslint + prettier` .\_.)
+*   `global.css` – không tận dụng Scoped Style của Vue .\_.
+*   Có dùng một chút [`lodash-es`](https://yarnpkg.com/package/lodash-es) (để đỡ phải làm tà đạo với object/array hơn)
+*   Favicon cung cấp bởi Icons8 – ["Microsoft Todo 2019 icon in Fluency Style"](https://icons8.com/icon/HpPqCqynotVp/microsoft-todo-2019)
+
+
+
+### Bắt đầu
+
+```bash
+yarn
+
+# Chạy local dev server
+yarn dev
+
+# Build để deploy
+yarn build
+
+# Serve bản đã build trên local server
+yarn serve
 ```
-$ yarn
-$ yarn dev
-```
 
 
 
-help what am i even doing rn
+>   help what am i even doing rn
+
